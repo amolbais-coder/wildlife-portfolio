@@ -56,3 +56,33 @@ section {
     font-weight: bold;
 }
 
+#contact {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+
+
