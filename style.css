@@ -142,6 +142,23 @@ button {
 button:hover {
     background: #555;
 }
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6600, #cc5500);
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
 
 
