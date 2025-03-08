@@ -1,42 +1,27 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Prevents extra width issues */
-}
-
-/* Prevent horizontal scrolling */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: white;
     padding: 30px;
-    text-align: center;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 nav ul li a {
@@ -50,15 +35,32 @@ nav ul li a:hover {
     color: #ff6600;
 }
 
-/* Sections */
 section {
     padding: 20px;
-    max-width: 100%;
 }
 
-/* Home Section with Background */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Homepage Background */
 #home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.56%20PM%20(1).jpeg?raw=true') no-repeat center center/cover;
+    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,39 +70,17 @@ section {
     font-size: 2rem;
     font-weight: bold;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-/* Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    justify-items: center;
-}
-
-/* Fix Image Sizing */
-.gallery img {
-    width: 100%;
-    max-width: 280px; /* Prevents images from getting too large */
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Contact Section */
 #contact {
     padding: 20px;
     background-color: #fff;
     text-align: center;
 }
 
-/* Form */
 form {
     max-width: 400px;
     margin: auto;
@@ -110,10 +90,8 @@ form {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
 }
 
-/* Input Fields */
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -122,7 +100,6 @@ input, textarea {
     border-radius: 5px;
 }
 
-/* Button */
 button {
     background-color: #333;
     color: white;
@@ -135,7 +112,6 @@ button:hover {
     background-color: #555;
 }
 
-/* Social Section */
 #social {
     background-color: #222;
     color: white;
@@ -145,6 +121,7 @@ button:hover {
 
 #social a {
     color: #ffcc00;
+    font-weight: bold;
     font-size: 18px;
     text-decoration: none;
     margin: 0 10px;
@@ -154,7 +131,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* CTA Button */
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #ff6600, #cc5500);
@@ -171,46 +147,38 @@ button:hover {
 
 .cta-button:hover {
     transform: scale(1.1);
+    background: linear-gradient(45deg, #cc5500, #ff6600);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* 🔹 Mobile Optimization */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    /* Stop horizontal scrolling */
-    body {
-        overflow-x: hidden;
-    }
-
-    /* Adjust Navigation */
     nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
-    /* Fix Gallery Layout */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Two images per row */
-        gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
-    /* Fix Home Section */
     #home {
         font-size: 1.5rem;
         padding: 20px;
     }
 
-    /* Ensure Buttons & Forms Fit */
-    .cta-button {
+    .trip-category {
         width: 90%;
-        max-width: 300px;
-    }
-
-    form {
-        width: 95%;
     }
 }
