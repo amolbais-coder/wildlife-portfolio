@@ -5,19 +5,23 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #333;
     color: white;
     padding: 30px;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
-}    
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -32,6 +36,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,12 +44,16 @@ section {
     padding: 10px;
     justify-items: center;
 }
+
 .gallery img {
-    width: 100%;
+    width: -webkit-fill-available; /* Added for Edge support */
+    width: -moz-available;         /* Added for Firefox support */
+    width: fill-available;         /* Standard (for future support) */
     max-width: 300px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
+
 .gallery img:hover {
     transform: scale(1.1);
 }
@@ -52,14 +61,17 @@ section {
 /* Homepage Background */
 #home {
     background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.56%20PM%20(1).jpeg?raw=true') no-repeat center center/cover;
-    display: tile;
+    display: flex; /* Changed from 'tile' (invalid) */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* Text color */
+    color: white;
     font-size: 2rem;
     font-weight: bold;
+    width: -webkit-fill-available; /* Ensuring full width on Edge */
+    width: -moz-available;
+    width: fill-available;
 }
 
 #contact {
@@ -67,12 +79,18 @@ section {
     background-color: #fff;
     text-align: center;
 }
+
 form {
     max-width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -80,6 +98,7 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     background-color: #333;
     color: white;
@@ -87,67 +106,29 @@ button {
     border: none;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #555;
 }
+
 #social {
     background-color: #222;
     color: white;
     padding: 15px;
     text-align: center;
 }
+
 #social a {
     color: #ffcc00;
     font-size: 18px;
     text-decoration: none;
     margin: 0 10px;
 }
+
 #social a:hover {
     text-decoration: underline;
 }
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    #home {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-}
-form {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background: #555;
-}
+
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #ff6600, #cc5500);
@@ -161,23 +142,34 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .cta-button:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    #home {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    
     .trip-category {
         width: 90%;
     }
 }
-
-
-
