@@ -69,11 +69,13 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    width: 100vw; /* Ensure it covers the full viewport width */
+    max-width: 100%; /* Prevent extra width causing scrolling */
+    margin: 0; /* Remove any auto margin */
     padding: 40px 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
 
 #contact {
     padding: 20px;
