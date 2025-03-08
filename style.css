@@ -15,11 +15,13 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 nav ul li a {
@@ -46,9 +48,7 @@ section {
 }
 
 .gallery img {
-    width: -webkit-fill-available; /* Added for Edge support */
-    width: -moz-available;         /* Added for Firefox support */
-    width: fill-available;         /* Standard (for future support) */
+    width: 100%;
     max-width: 300px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -60,8 +60,8 @@ section {
 
 /* Homepage Background */
 #home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.56%20PM%20(1).jpeg?raw=true') no-repeat center center/cover;
-    display: flex; /* Changed from 'tile' (invalid) */
+    background: url('images/home-banner.jpg') no-repeat center center/cover;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -69,9 +69,10 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    width: -webkit-fill-available; /* Ensuring full width on Edge */
-    width: -moz-available;
-    width: fill-available;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 #contact {
@@ -120,6 +121,7 @@ button:hover {
 
 #social a {
     color: #ffcc00;
+    font-weight: bold;
     font-size: 18px;
     text-decoration: none;
     margin: 0 10px;
@@ -145,6 +147,7 @@ button:hover {
 
 .cta-button:hover {
     transform: scale(1.1);
+    background: linear-gradient(45deg, #cc5500, #ff6600);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
