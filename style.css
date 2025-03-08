@@ -1,9 +1,16 @@
-body {
+/* Reset and General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -37,8 +44,28 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+/* Home Section */
+#home {
+    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100vw;
+    max-width: 100%;
+    padding: 40px 20px;
+    overflow-x: hidden;
+}
+
+/* Gallery Section */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -58,25 +85,7 @@ section {
     transform: scale(1.1);
 }
 
-/* Homepage Background */
-#home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100vw; /* Ensure it covers the full viewport width */
-    max-width: 100%; /* Prevent extra width causing scrolling */
-    margin: 0; /* Remove any auto margin */
-    padding: 40px 20px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-
+/* Contact Section */
 #contact {
     padding: 20px;
     background-color: #fff;
@@ -114,6 +123,7 @@ button:hover {
     background-color: #555;
 }
 
+/* Social Links */
 #social {
     background-color: #222;
     color: white;
@@ -133,6 +143,7 @@ button:hover {
     text-decoration: underline;
 }
 
+/* CTA Button */
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #ff6600, #cc5500);
@@ -153,6 +164,7 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
