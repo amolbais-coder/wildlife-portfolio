@@ -56,8 +56,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: green;
-  -webkit-text-stroke: 1px white; /* 
+    color: white;
     font-size: 2rem;
     font-weight: bold;
     width: 100vw;
