@@ -13,16 +13,12 @@ html, body {
     background-color: #f4f4f4;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: white;
-    padding: 30px;
-    width: 100%;
-    text-align: center;
+    padding: 20px;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -46,10 +42,9 @@ nav ul li a:hover {
     color: #ff6600;
 }
 
-/* Home Section (Hero) */
+/* Home Section */
 #home {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('https://your-direct-image-link.jpg') no-repeat center center/cover;
+    background: url('your-fixed-image-url.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,8 +54,7 @@ nav ul li a:hover {
     font-size: 2rem;
     font-weight: bold;
     width: 100vw;
-    max-width: 100%;
-    height: 90vh;
+    min-height: 400px;
     padding: 40px 20px;
 }
 
@@ -68,7 +62,7 @@ nav ul li a:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
     justify-items: center;
 }
@@ -77,12 +71,40 @@ nav ul li a:hover {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
-    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
+}
+
+/* Trips Section */
+.trip-category {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.trip-category h3 {
+    margin-bottom: 10px;
+}
+
+.trip-category button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.trip-category button:hover {
+    background-color: #cc5500;
 }
 
 /* Contact Section */
@@ -105,7 +127,7 @@ form {
 
 input, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -114,7 +136,7 @@ input, textarea {
 button {
     background-color: #333;
     color: white;
-    padding: 12px;
+    padding: 10px;
     border: none;
     cursor: pointer;
 }
@@ -128,7 +150,6 @@ button:hover {
     background-color: #222;
     color: white;
     padding: 15px;
-    text-align: center;
 }
 
 #social a {
@@ -164,12 +185,7 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Mobile Responsive */
+/* Responsive Fixes */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -177,7 +193,7 @@ html {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .gallery {
@@ -187,5 +203,9 @@ html {
     #home {
         font-size: 1.5rem;
         padding: 20px;
+    }
+
+    .trip-category {
+        width: 90%;
     }
 }
