@@ -13,12 +13,16 @@ html, body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
     padding: 30px;
+    width: 100%;
+    text-align: center;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -42,15 +46,10 @@ nav ul li a:hover {
     color: #ff6600;
 }
 
-section {
-    padding: 20px;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Home Section */
+/* Home Section (Hero) */
 #home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('https://your-direct-image-link.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,8 +60,8 @@ section {
     font-weight: bold;
     width: 100vw;
     max-width: 100%;
+    height: 90vh;
     padding: 40px 20px;
-    overflow-x: hidden;
 }
 
 /* Gallery Section */
@@ -70,7 +69,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     justify-items: center;
 }
 
@@ -78,6 +77,7 @@ section {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -105,7 +105,7 @@ form {
 
 input, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -114,7 +114,7 @@ input, textarea {
 button {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     cursor: pointer;
 }
@@ -172,14 +172,11 @@ html {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
     }
 
     nav ul li {
-        display: block;
         margin: 10px 0;
     }
 
@@ -190,9 +187,5 @@ html {
     #home {
         font-size: 1.5rem;
         padding: 20px;
-    }
-
-    .trip-category {
-        width: 90%;
     }
 }
