@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>In the Wild with Amol R. Bais</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Nature Unveiled: A Photographer’s Eye">
+    <meta name="keywords" content="Wildlife Photography, Nature, Tigers, National Parks, Tadoba, Kanha, Bandhavgarh, Jim Corbett, Pench, Tippeshwar, Panna, Safari, Pilibhit">
+    <meta name="author" content="Amol Bais">
 </head>
 <body>
-
-    <!-- Navbar -->
     <header>
-        <h1>Wildlife Portfolio</h1>
+        <h1>Amol Bais Photography</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,48 +22,71 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
     <section id="home">
-        <div class="overlay">
-            <h2>Wildlife Through My Lens</h2>
-            <p>Capturing nature's beauty, one shot at a time.</p>
-            <a href="#gallery" class="cta-button">View Gallery</a>
-        </div>
+        <h2>"व्याघ्रः वने निवसति, वनं तेन रक्षितम्।</h2>
+        <p>Explore my work and experience the beauty of wildlife.</p>
+        <a href="#trips" class="cta-button">🌍 Explore Wild Trails & Adventures</a>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery">
-        <h2>Gallery</h2>
+        <h2>Wildlife Photography</h2>
         <div class="gallery">
-            <div class="card"><img src="https://via.placeholder.com/300" alt="Wildlife 1"></div>
-            <div class="card"><img src="https://via.placeholder.com/300" alt="Wildlife 2"></div>
-            <div class="card"><img src="https://via.placeholder.com/300" alt="Wildlife 3"></div>
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Small Blue Kingfisher">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Tiger in the wild">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Tree Pie bird">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Majestic tiger in the forest">
         </div>
     </section>
 
-    <!-- Trips Section -->
     <section id="trips">
-        <h2>Upcoming Wildlife Trips</h2>
-        <p>Join an adventure into the wild.</p>
-        <a href="#" class="cta-button">Book Now</a>
+        <h2>🌿 Wild Trails & Adventures</h2>
+        <p>Join our thrilling wildlife safaris, birding expeditions, and trekking adventures across India's top national parks.</p>
+
+        <div class="trip-category">
+            <h3>🐅 Wildlife Safaris</h3>
+            <p>Experience the thrill of the wild in Tadoba, Ranthambore, and other top national parks.</p>
+            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Wildlife%20Safari'">Book Now</button>
+        </div>
+        
+        <div class="trip-category">
+            <h3>🦜 Birding Expeditions</h3>
+            <p>Discover rare and exotic birds in Bharatpur, Western Ghats, and more.</p>
+            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Birding%20Tour'">Book Now</button>
+        </div>
+
+        <div class="trip-category">
+            <h3>🏔️ Trekking Adventures</h3>
+            <p>Conquer breathtaking trails in the Himalayas, Sahyadris, and beyond.</p>
+            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Trekking%20Expedition'">Book Now</button>
+        </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>Amol Bais</strong>, a passionate wildlife photographer. My goal is to capture the beauty of nature and raise awareness about wildlife conservation.</p>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
+        <p>Email: <a href="mailto:amolrbais@gmail.com">amolrbais@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+919545267651">+91-9545267651</a></p>
+        
+        <form action="https://formspree.io/f/xqapzezw" method="POST">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
 
-    <!-- Social Media -->
     <section id="social">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
+        <h2>Follow Me</h2>
+        <a href="https://www.instagram.com/amolsphere" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/amolbais" target="_blank">Facebook</a> |
+        <a href="https://youtube.com/@amol994" target="_blank">YouTube</a>
     </section>
-
 </body>
 </html>
