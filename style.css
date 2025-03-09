@@ -57,8 +57,8 @@ section {
     justify-content: center;
     text-align: center;
     color: green;
-  -webkit-text-stroke: 2px white; /* Adjust stroke width and color as needed */
-    font-size: 2rem;
+  -webkit-text-stroke: 1px white; /* 
+    font-size: 1rem;
     font-weight: bold;
     width: 100vw;
     max-width: 100%;
