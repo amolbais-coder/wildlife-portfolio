@@ -32,8 +32,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: green;
-    text-decoration: none;
+    color: white;
+    text-decoration: dotted;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
 }
