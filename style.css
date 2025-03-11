@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
@@ -50,7 +50,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: bold;
     width: 100vw;
