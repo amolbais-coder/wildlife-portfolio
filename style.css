@@ -10,12 +10,12 @@ body {
 
 /* Header */
 header {
-    background: #222;
-    color: #fff;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px; /* Adjust left-right padding */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 h1 {
