@@ -161,3 +161,74 @@ button[type="submit"]:hover {
 #social a:hover {
     color: #f4a261;
 }
+/* General Reset to Remove Side Scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure Page Fits Within Mobile Screen */
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Make Sections Centered & Responsive */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Fix Overflow in Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Typography */
+h1, h2, h3, p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Buttons - Ensure They Fit Mobile Screens */
+button {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* 🔹 Fix Responsive Layouts */
+@media (max-width: 768px) {
+    /* Stack Content for Smaller Screens */
+    .container {
+        padding: 5px;
+    }
+
+    .fact-box, .comments, .slideshow-container {
+        width: 95%; /* Prevents overflow */
+        margin: auto;
+    }
+
+    /* Fix Navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Improve Button Size */
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
