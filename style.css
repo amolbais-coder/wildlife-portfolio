@@ -1,276 +1,134 @@
-/* Reset and General Styling */
-* {
-    box-sizing: border-box;
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    width: 100%;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark theme */
+    color: #ffffff;
 }
 
 header {
-    background-color: #333;
+    background-image: url('https://source.unsplash.com/1600x900/?jungle,wildlife');
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
     color: white;
-    padding: 30px;
+    text-shadow: 2px 2px 10px black;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    background: #1b5e20;
 }
 
 nav ul li {
-    margin: 10px 15px;
+    display: inline;
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff6600;
+    background: #ff9800;
+    border-radius: 5px;
 }
 
 section {
-    padding: 20px;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Home Section */
-#home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100vw;
-    max-width: 100%;
-    padding: 40px 20px;
-    overflow-x: hidden;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-/* Gallery Section */
+h2 {
+    font-size: 28px;
+    color: #ff9800;
+}
+
+p {
+    font-size: 18px;
+}
+
+.cta-button {
+    background: #ff9800;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffcc80;
+}
+
+/* Gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery img {
-    width: 100%;
-    max-width: 300px;
+    width: 200px;
+    margin: 10px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
 }
 
-/* Contact Section */
-#contact {
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
+/* Contact Form */
 form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    background: #333;
     padding: 20px;
-    background: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    padding: 10px;
     border-radius: 5px;
+    border: none;
 }
 
 button {
-    background-color: #333;
+    background: #ff9800;
+    padding: 10px 20px;
     color: white;
-    padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background: #ffcc80;
 }
 
-/* Social Links */
-#social {
-    background-color: #222;
-    color: white;
-    padding: 15px;
+/* Footer */
+footer {
+    background: #1b5e20;
     text-align: center;
+    padding: 20px;
+    color: white;
 }
 
-#social a {
-    color: #ffcc00;
-    font-weight: bold;
-    font-size: 18px;
+footer a {
+    color: #ff9800;
     text-decoration: none;
     margin: 0 10px;
 }
-
-#social a:hover {
-    text-decoration: underline;
-}
-
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff6600, #cc5500);
-    color: white;
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    margin-top: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-    background: linear-gradient(45deg, #cc5500, #ff6600);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    #home {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-
-    .trip-category {
-        width: 90%;
-    }
-}
-/* Blog Section Styles */
-.blog-container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* Blog Post Card */
-.blog-post {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-/* Hover Effect for Blog Post */
-.blog-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Blog Images */
-.blog-post img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.blog-post:hover img {
-    transform: scale(1.05);
-}
-
-/* Post Date */
-.post-date {
-    color: #888;
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-top: 5px;
-}
-
-/* Blog Title */
-.blog-post h2 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-/* Blog Content */
-.post-content {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Read More Button */
-.read-more {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background 0.3s ease-in-out;
-}
-
-.read-more:hover {
-    background: linear-gradient(135deg, #0056b3, #003f7f);
-    transform: scale(1.05);
-}
-
