@@ -1,20 +1,21 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f9;
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
     color: white;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    padding: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,15 +25,15 @@ header {
     margin: 40px auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
 /* Blog Post Card */
 .blog-post {
     background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1.8rem;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
@@ -41,8 +42,8 @@ header {
 
 /* Hover Effect */
 .blog-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Blog Images */
@@ -50,7 +51,7 @@ header {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -61,49 +62,47 @@ header {
 
 /* Post Date */
 .post-date {
-    color: #666;
+    color: #888;
     font-size: 0.9rem;
     font-style: italic;
-    margin-top: 5px;
+    margin: 8px 0;
 }
 
 /* Blog Title */
 .blog-post h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #333;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 /* Blog Content */
 .post-content {
     font-size: 1rem;
     color: #555;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 /* Read More Button */
 .read-more {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    display: block;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(135deg, #ff758c, #ff3d68);
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 6px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 8px;
     text-align: center;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    width: 150px;
+    margin: 20px auto 0;
 }
 
 /* Hover Effect for Button */
 .read-more:hover {
-    background: linear-gradient(135deg, #0056b3, #003f7f);
-    transform: translateX(-50%) scale(1.05);
+    background: linear-gradient(135deg, #ff3d68, #ff1e55);
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -113,4 +112,5 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+    margin-top: 40px;
 }
