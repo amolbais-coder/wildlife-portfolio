@@ -10,48 +10,15 @@ html, body {
     width: 100%;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f4f4;
 }
 
-/* Define Light and Dark Mode Variables */
-:root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --header-bg: #333;
-    --header-text: white;
-    --button-bg: #333;
-    --button-text: white;
-    --button-hover: #555;
-}
-
-.dark-mode {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --header-bg: #1f1f1f;
-    --header-text: #ffcc00;
-    --button-bg: #ff6600;
-    --button-text: #121212;
-    --button-hover: #cc5500;
-}
-
-/* Header */
 header {
-    background-color: var(--header-bg);
-    color: var(--header-text);
+    background-color: #333;
+    color: white;
     padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-header h1 {
-    font-size: 24px;
-}
-
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -65,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--header-text);
+    color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
@@ -75,24 +42,6 @@ nav ul li a:hover {
     color: #ff6600;
 }
 
-/* Dark Mode Toggle Button */
-#darkModeToggle {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
-}
-
-#darkModeToggle:hover {
-    background-color: var(--button-hover);
-    transform: scale(1.05);
-}
-
-/* Sections */
 section {
     padding: 20px;
     max-width: 100%;
@@ -101,8 +50,7 @@ section {
 
 /* Home Section */
 #home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') 
-    no-repeat center center/cover;
+    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +88,7 @@ section {
 /* Contact Section */
 #contact {
     padding: 20px;
-    background-color: var(--bg-color);
+    background-color: #fff;
     text-align: center;
 }
 
@@ -164,17 +112,15 @@ input, textarea {
 }
 
 button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    background-color: #333;
+    color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: var(--button-hover);
-    transform: scale(1.05);
+    background-color: #555;
 }
 
 /* Social Links */
