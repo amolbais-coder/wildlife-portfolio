@@ -93,7 +93,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
-    text-align: center;
+    text-align: right;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     width: 150px;
     margin: 20px auto 0;
