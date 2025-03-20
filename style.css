@@ -42,6 +42,7 @@ header h1 {
 
 /* 🔹 Navigation Bar */
 nav ul {
+    background: #ffcc00
     list-style: none;
     padding: 0;
     margin: 0;
@@ -55,7 +56,6 @@ nav ul li {
 }
 
 nav ul li a {
-    background: #ffcc00
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
