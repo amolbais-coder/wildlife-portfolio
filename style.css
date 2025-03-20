@@ -1,71 +1,47 @@
-/* 🔹 Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-/* 🔹 Global Reset & Base Styles */
+/* 🔹 Global Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    overflow-x: hidden;
-    width: 100%;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    scroll-behavior: smooth;
 }
 
-/* 🔹 Header Styling */
+body {
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* 🔹 Header */
 header {
     background: linear-gradient(135deg, #003366, #0055a5);
     color: white;
-    text-align: center;
     padding: 1.5rem 0;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
     position: relative;
-    animation: fadeInDown 1s ease-in-out;
 }
 
-header h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-/* 🔹 Navigation Bar */
-nav {
-    background: #004080;
-    padding: 10px 0;
-}
-
-.nav-container {
+.logo-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* 🔹 Logo */
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+    max-width: 150px;
+    height: auto;
 }
 
-/* 🔹 Navigation Links */
+/* 🔹 Navigation */
+nav {
+    margin-top: 10px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -73,172 +49,140 @@ nav {
     display: inline-block;
 }
 
-.nav-links li a {
+.nav-links a {
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
     color: white;
-    padding: 10px 18px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s ease;
 }
 
-/* 🔹 Hover Effect */
-.nav-links li a:hover {
+.nav-links a:hover {
     background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+    border-radius: 5px;
 }
 
-/* 🔹 Hamburger Menu */
-.hamburger {
+/* 🔹 Mobile Menu */
+.menu-toggle {
     display: none;
-    flex-direction: column;
+    font-size: 2rem;
     cursor: pointer;
 }
 
-.hamburger div {
-    width: 30px;
-    height: 4px;
-    background: white;
-    margin: 5px;
-    border-radius: 5px;
+/* 🔹 Sections */
+section {
+    padding: 50px 20px;
 }
 
-/* 🔹 Mobile Menu (Hidden by Default) */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+/* 🔹 Home Section */
+#home {
+    background: url('images/home-banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
 
+.cta-button {
+    background: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #cc5500;
+}
+
+/* 🔹 Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Blog */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-container article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Trips */
+.trip-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trip {
+    background: #0055a5;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.trip button {
+    background: #ffcc00;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 🔹 Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background: #004080;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-        padding: 15px 0;
     }
 
     .nav-links.show {
         display: flex;
     }
 
-    .nav-links li {
-        padding: 10px 0;
-    }
-}
-
-/* 🔹 Home Section */
-#home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') 
-        no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100vw;
-    max-width: 100%;
-    padding: 40px 20px;
-}
-
-/* 🔹 Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    justify-items: center;
-}
-
-.gallery img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* 🔹 Trips Section */
-.trip-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.trip-category {
-    background: #0055a5;
-    color: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.trip-category:hover {
-    transform: scale(1.05);
-}
-
-.trip-category h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.trip-category p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.trip-category button {
-    background: #ffcc00;
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
-}
-
-.trip-category button:hover {
-    background: #ffaa00;
-}
-
-/* 🔹 Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: linear-gradient(135deg, #003366, #0055a5);
-    color: white;
-    margin-top: 30px;
-    font-size: 16px;
-}
-
-/* 🔹 Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .trip-category {
-        max-width: 90%;
+    .menu-toggle {
+        display: block;
     }
 }
