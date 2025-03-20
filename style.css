@@ -1,99 +1,90 @@
-/* 🔹 Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+/* 🔹 Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    background: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
     color: #333;
-    text-align: center;
 }
 
-/* 🔹 Header */
+/* 🔹 Header Styling */
 header {
-    background: linear-gradient(135deg, #003366, #0055a5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
     color: white;
-    padding: 1.5rem 0;
-    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.logo {
-    max-width: 150px;
+/* 🔹 Logo Styling */
+.logo-container img {
+    width: 60px;
     height: auto;
 }
 
-/* 🔹 Navigation */
-nav {
-    margin-top: 10px;
+/* 🔹 Title Styling */
+header h1 {
+    font-size: 22px;
+    text-align: center;
+    flex: 1;
 }
 
+/* 🔹 Hamburger Menu Button */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* 🔹 Navigation Menu */
 .nav-links {
-    list-style: none;
     display: flex;
     justify-content: center;
+    background: #333;
+    padding: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
     gap: 20px;
 }
 
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
+.nav-links ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 10px 15px;
-    transition: 0.3s ease;
+    transition: background 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
 }
 
-/* 🔹 Mobile Menu */
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
+/* 🔹 Responsive Menu for Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
 
-/* 🔹 Sections */
-section {
-    padding: 50px 20px;
-}
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* 🔹 Home Section */
-#home {
-    background: url('images/home-banner.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-}
-
-.cta-button {
-    background: #ff6600;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    background: #cc5500;
+    .nav-links.show {
+        display: flex;
+    }
 }
 
 /* 🔹 Gallery */
@@ -102,87 +93,20 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     padding: 20px;
+    justify-items: center;
+}
+
+.gallery a {
+    text-decoration: none;
 }
 
 .gallery img {
     width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-}
-
-/* 🔹 Blog */
-.blog-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.blog-container article {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0055a5;
-    text-decoration: none;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-/* 🔹 Trips */
-.trip-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.trip {
-    background: #0055a5;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
-
-.trip button {
-    background: #ffcc00;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* 🔹 Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* 🔹 Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
 }
