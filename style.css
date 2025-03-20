@@ -1,4 +1,8 @@
-/* Reset and General Styling */
+/* 🔹 Import Google Fonts - Placed at the Top for Best Performance */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 🔹 General Reset and Global Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,18 +10,15 @@
 }
 
 html, body {
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
-/* Import a Beautiful Cursive Font */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-/* Header Styling */
+/* 🔹 Header Styling */
 header {
     background: linear-gradient(135deg, rgba(255, 126, 179, 0.9), rgba(255, 117, 140, 0.9));
     color: white;
@@ -32,7 +33,7 @@ header {
     animation: fadeInDown 1s ease-in-out;
 }
 
-/* Cursive Font for Branding */
+/* 🔹 Cursive Font for Branding */
 header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
@@ -42,7 +43,7 @@ header h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Bar */
+/* 🔹 Navigation Bar */
 nav ul {
     list-style: none;
     padding: 0;
@@ -68,13 +69,12 @@ nav ul li a {
     position: relative;
 }
 
-/* Hover Effect */
+/* 🔹 Hover Effects */
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
 }
 
-/* Underline Effect */
 nav ul li a::after {
     content: "";
     display: block;
@@ -89,7 +89,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Animation */
+/* 🔹 Fade-In Animation */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -101,15 +101,9 @@ nav ul li a:hover::after {
     }
 }
 
-section {
-    padding: 20px;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Home Section */
+/* 🔹 Home Section */
 #home {
-    background: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true') no-repeat center center/cover;
+    background: url('https://your-image-url-here.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,15 +115,14 @@ section {
     width: 100vw;
     max-width: 100%;
     padding: 40px 20px;
-    overflow-x: hidden;
 }
 
-/* Gallery Section */
+/* 🔹 Gallery Section */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 20px;
     justify-items: center;
 }
 
@@ -144,7 +137,7 @@ section {
     transform: scale(1.1);
 }
 
-/* Contact Section */
+/* 🔹 Contact Section */
 #contact {
     padding: 20px;
     background-color: #fff;
@@ -176,13 +169,14 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #555;
 }
 
-/* Social Links */
+/* 🔹 Social Links */
 #social {
     background-color: #222;
     color: white;
@@ -202,7 +196,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* CTA Button */
+/* 🔹 CTA Button */
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #ff6600, #cc5500);
@@ -223,23 +217,20 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Mobile Responsive */
+/* 🔹 Mobile Optimization */
 @media (max-width: 768px) {
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        gap: 15px; /* Added spacing */
     }
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.2rem; /* Adjusted for mobile */
     }
 
     .gallery {
@@ -252,6 +243,6 @@ html {
     }
 
     .trip-category {
-        width: 90%;
+        max-width: 90%;
     }
 }
