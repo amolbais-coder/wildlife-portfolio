@@ -103,14 +103,10 @@
 </section>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.querySelector(".menu-button");
-        const nav = document.querySelector("nav");
-
-        menuButton.addEventListener("click", function () {
-            nav.classList.toggle("show"); // Toggle the menu visibility
-        });
-    });
+function toggleMenu() {
+    var nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show");
+}
 </script>
 
 </body>
