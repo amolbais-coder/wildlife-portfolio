@@ -3,338 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Photography by Amol R. Bais | Nature & Conservation</title>
-    <meta name="description" content="Professional wildlife photography showcasing India's majestic tigers, birds, and landscapes. Join safari tours and photography expeditions.">
-    <meta name="keywords" content="Wildlife Photography, Nature Photography, Tiger Photography, Indian Wildlife, Safari Tours, Photography Workshops">
-    <meta name="author" content="Amol R. Bais">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Wildlife Photography by Amol R. Bais">
-    <meta property="og:description" content="Capturing the wild essence of India's national parks and wildlife sanctuaries.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Wildlife Photography by Amol Bais | Tiger Photography Tours</title>
+    <meta name="description" content="Professional wildlife photography tours in India's top national parks - Tadoba, Kanha, Bandhavgarh and more">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container header-container">
-            <div class="logo-container">
-                <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Photography Logo" class="logo">
-                <span class="brand-name">Amol Bais</span>
-            </div>
-            
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#trips" class="nav-link">Wild Trips</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                </ul>
-            </nav>
+    <!-- Flash-style Header -->
+    <header class="flash-header">
+        <div class="logo-container">
+            <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Photography" class="logo">
+            <h1>Amol Bais <span>Wildlife Photography</span></h1>
         </div>
+        
+        <nav class="flash-nav">
+            <a href="#home" class="nav-btn active"><i class="fas fa-home"></i> Home</a>
+            <a href="#gallery" class="nav-btn"><i class="fas fa-images"></i> Gallery</a>
+            <a href="#tours" class="nav-btn"><i class="fas fa-camera"></i> Tours</a>
+            <a href="#about" class="nav-btn"><i class="fas fa-user"></i> About</a>
+            <a href="#contact" class="nav-btn"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="section">
-        <div class="hero-content">
-            <h1 class="hero-title">Wildlife Photography</h1>
-            <p class="hero-quote">"व्याघ्रः वने निवसति, वनं तेन रक्षितम्।"</p>
-            <p class="hero-subtitle">Capturing the untamed beauty of nature's most magnificent creatures</p>
-            <a href="#trips" class="btn">Explore Wild Adventures</a>
+    <!-- Hero Slideshow -->
+    <section id="home" class="hero-slideshow">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true')">
+                    <div class="slide-content">
+                        <h2>Discover India's Wild Majesty</h2>
+                        <p>Professional guided photography tours in tiger country</p>
+                        <a href="#tours" class="cta-button">Book Your Safari</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true')">
+                    <div class="slide-content">
+                        <h2>Royal Bengal Tigers</h2>
+                        <p>Exclusive tiger photography experiences</p>
+                        <a href="#tours" class="cta-button">View Tours</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true')">
+                    <div class="slide-content">
+                        <h2>Birding Expeditions</h2>
+                        <p>Capture India's exotic avian species</p>
+                        <a href="#tours" class="cta-button">Join a Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section">
-        <div class="container">
-            <h2 class="section-title">Wildlife Portfolio</h2>
-            <p class="section-subtitle">A visual journey through India's diverse wildlife and landscapes</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Small Blue Kingfisher" class="gallery-img">
-                    <div class="gallery-caption">
-                        <h3>Small Blue Kingfisher</h3>
-                        <p>Tadoba National Park</p>
-                    </div>
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Wildlife Portfolio</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Kingfisher">
+                <div class="gallery-overlay">
+                    <h3>Kingfisher</h3>
+                    <p>Tadoba National Park</p>
                 </div>
-                
-                <div class="gallery-item">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Tiger in the wild" class="gallery-img">
-                    <div class="gallery-caption">
-                        <h3>Royal Bengal Tiger</h3>
-                        <p>Bandhavgarh Tiger Reserve</p>
-                    </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Tiger">
+                <div class="gallery-overlay">
+                    <h3>Bengal Tiger</h3>
+                    <p>Bandhavgarh Reserve</p>
                 </div>
-                
-                <div class="gallery-item">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Tree Pie bird" class="gallery-img">
-                    <div class="gallery-caption">
-                        <h3>Rufous Treepie</h3>
-                        <p>Pench National Park</p>
-                    </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Treepie">
+                <div class="gallery-overlay">
+                    <h3>Rufous Treepie</h3>
+                    <p>Pench National Park</p>
                 </div>
-                
-                <div class="gallery-item">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Majestic tiger in the forest" class="gallery-img">
-                    <div class="gallery-caption">
-                        <h3>Tiger in Golden Light</h3>
-                        <p>Kanha Tiger Reserve</p>
-                    </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Tiger in forest">
+                <div class="gallery-overlay">
+                    <h3>Tiger in Habitat</h3>
+                    <p>Kanha Reserve</p>
                 </div>
             </div>
         </div>
+        <a href="#" class="view-more">View Full Gallery <i class="fas fa-arrow-right"></i></a>
     </section>
 
-    <!-- Trips Section -->
-    <section id="trips" class="section">
-        <div class="container">
-            <h2 class="section-title">Wildlife Adventures</h2>
-            <p class="section-subtitle">Join me on unforgettable journeys through India's wilderness</p>
-            
-            <div class="trips-container">
-                <div class="trip-card">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(3).jpeg?raw=true" alt="Wildlife Safari" class="trip-img">
-                    <div class="trip-content">
-                        <h3 class="trip-title">🐅 Wildlife Safaris</h3>
-                        <p class="trip-description">Experience the thrill of tracking tigers and other wildlife in India's premier national parks.</p>
-                        
-                        <div class="trip-features">
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-map-marker-alt"></i></span>
-                                <span>Tadoba, Ranthambore, Bandhavgarh, Kanha</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-camera"></i></span>
-                                <span>Photography guidance included</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-calendar-alt"></i></span>
-                                <span>Year-round availability</span>
-                            </div>
+    <!-- Tours Section -->
+    <section id="tours" class="tours-section">
+        <h2 class="section-title">Photography Tours</h2>
+        <div class="tours-container swiper tours-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide tour-card">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(3).jpeg?raw=true" alt="Tiger Safari">
+                    <div class="tour-info">
+                        <h3>Tiger Photography Safari</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Tadoba, Bandhavgarh, Kanha</p>
+                        <p class="tour-desc">5-day intensive tiger photography workshop with expert guidance</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-camera"></i> DSLR Training</span>
+                            <span><i class="fas fa-car"></i> Jeep Safaris</span>
+                            <span><i class="fas fa-hotel"></i> Jungle Lodge</span>
                         </div>
-                        
-                        <a href="https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Wildlife%20Safari" class="btn">Book Safari</a>
+                        <a href="https://wa.me/919545267651" class="book-now">Book Now <i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
-                <div class="trip-card">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(2).jpeg?raw=true" alt="Birding Expedition" class="trip-img">
-                    <div class="trip-content">
-                        <h3 class="trip-title">🦜 Birding Expeditions</h3>
-                        <p class="trip-description">Discover India's rich avian diversity with expert-guided bird watching tours.</p>
-                        
-                        <div class="trip-features">
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-map-marker-alt"></i></span>
-                                <span>Bharatpur, Western Ghats, Himalayan Foothills</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-binoculars"></i></span>
-                                <span>Equipment provided if needed</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-clock"></i></span>
-                                <span>Best during migration seasons</span>
-                            </div>
+                <div class="swiper-slide tour-card">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(2).jpeg?raw=true" alt="Birding Tour">
+                    <div class="tour-info">
+                        <h3>Birding Expedition</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Western Ghats, Bharatpur</p>
+                        <p class="tour-desc">7-day bird photography tour covering 150+ species</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-binoculars"></i> Equipment Provided</span>
+                            <span><i class="fas fa-kiwi-bird"></i> Rare Species</span>
+                            <span><i class="fas fa-hiking"></i> Nature Walks</span>
                         </div>
-                        
-                        <a href="https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Birding%20Tour" class="btn">Book Birding Tour</a>
+                        <a href="https://wa.me/919545267651" class="book-now">Book Now <i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
-                <div class="trip-card">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(5).jpeg?raw=true" alt="Trekking Adventure" class="trip-img">
-                    <div class="trip-content">
-                        <h3 class="trip-title">🏔️ Trekking Adventures</h3>
-                        <p class="trip-description">Explore wilderness trails and capture stunning landscapes on guided treks.</p>
-                        
-                        <div class="trip-features">
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-map-marker-alt"></i></span>
-                                <span>Himalayas, Western Ghats, Central India</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-hiking"></i></span>
-                                <span>All fitness levels accommodated</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon"><i class="fas fa-leaf"></i></span>
-                                <span>Eco-friendly practices</span>
-                            </div>
+                <div class="swiper-slide tour-card">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(5).jpeg?raw=true" alt="Wildlife Trek">
+                    <div class="tour-info">
+                        <h3>Wilderness Trek</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Satpura, Panna</p>
+                        <p class="tour-desc">4-day walking safari for intimate wildlife encounters</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-tree"></i> Forest Trails</span>
+                            <span><i class="fas fa-campground"></i> Camping</span>
+                            <span><i class="fas fa-camera"></i> Landscape Photography</span>
                         </div>
-                        
-                        <a href="https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Trekking%20Expedition" class="btn">Book Trekking</a>
+                        <a href="https://wa.me/919545267651" class="book-now">Book Now <i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About The Photographer</h2>
-            
-            <div class="about-container">
-                <div class="about-img-container">
-                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(1).jpeg?raw=true" alt="Amol Bais with camera" class="about-img">
-                </div>
-                
-                <div class="about-content">
-                    <h3>Amol R. Bais</h3>
-                    <p class="about-text">With over a decade of experience in wildlife photography, I've dedicated my life to capturing the raw beauty of nature and its magnificent creatures. My journey began in the forests of Central India, where I first encountered the majestic Bengal tiger, sparking a lifelong passion.</p>
-                    
-                    <p class="about-text">My work has been featured in several wildlife magazines and conservation campaigns. I believe photography is not just about capturing images, but about telling stories that inspire conservation and respect for our natural world.</p>
-                    
-                    <div class="skills">
-                        <h4>My Skills</h4>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Wildlife Photography</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Field Guiding</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Conservation Education</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(1).jpeg?raw=true" alt="Amol Bais">
+            </div>
+            <div class="about-content">
+                <h2>About Amol Bais</h2>
+                <p class="about-text">With over 12 years of experience in wildlife photography, I specialize in capturing India's magnificent tigers and diverse ecosystems. My work has been featured in leading wildlife magazines and conservation campaigns.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <h4>Wildlife Photography <span>95%</span></h4>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
                     </div>
+                    <div class="skill">
+                        <h4>Safari Guiding <span>90%</span></h4>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Photo Workshops <span>85%</span></h4>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/amolsphere" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/amolbais" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com/@amol994" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">For photography inquiries, safari bookings, or collaborations</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>amolrbais@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p>+91 9545267651</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Based In</h3>
-                            <p>Nagpur, Maharashtra, India</p>
-                        </div>
-                    </div>
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>amolrbais@gmail.com</p>
                 </div>
-                
-                <form class="contact-form" action="https://formspree.io/f/xqapzezw" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject">
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+91 9545267651</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Nagpur, Maharashtra, India</p>
+                </div>
             </div>
+            <form class="contact-form" action="https://formspree.io/f/xqapzezw" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.instagram.com/amolsphere" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/amolbais" class="social-link" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://youtube.com/@amol994" class="social-link" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://wa.me/919545267651" class="social-link" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+    <footer class="flash-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Photography">
+                <h3>Amol Bais Wildlife Photography</h3>
             </div>
-            
-            <p class="copyright">&copy; 2024 Amol R. Bais Wildlife Photography. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#tours">Tours</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/amolsphere" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/amolbais" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@amol994" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/919545267651" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Amol Bais Wildlife Photography. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top" id="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- JavaScript -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
