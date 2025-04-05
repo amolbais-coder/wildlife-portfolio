@@ -3,73 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Photography by Amol Bais | Tiger Safaris</title>
-    <meta name="description" content="Stunning wildlife photography from India's national parks. Join tiger safaris and photography tours.">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Splide Slider CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Amol Bais Wildlife Photography | Tiger Safaris</title>
+    <!-- Add all previous meta tags and links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="blog.css"> <!-- Link to your blog CSS -->
 </head>
 <body>
-    <!-- Flashy Header -->
+    <!-- Flash Header with Mobile Menu -->
     <header class="flash-header">
-        <div class="logo-container">
-            <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Logo" class="logo">
-            <h1>Amol Bais <span>Wildlife Photography</span></h1>
-        </div>
-        
-        <nav class="flash-nav">
-            <ul>
-                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
-                <li><a href="#tours" class="nav-link"><i class="fas fa-safari"></i> Tours</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="social-flash">
-            <a href="https://www.instagram.com/amolsphere" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/amolbais" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://wa.me/919545267651" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Logo" class="logo animate__animated animate__fadeIn">
+                <h1 class="animate__animated animate__fadeIn">Amol Bais <span>Wildlife Photography</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#tours" class="nav-link"><i class="fas fa-safari"></i> Tours</a></li>
+                    <li class="has-dropdown">
+                        <a href="#blog" class="nav-link blog-dropdown-toggle"><i class="fas fa-blog"></i> Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="blog-dropdown">
+                            <li><a href="blog.html#conservation">Conservation</a></li>
+                            <li><a href="blog.html#photography-tips">Photography Tips</a></li>
+                            <li><a href="blog.html#safari-diaries">Safari Diaries</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Slideshow -->
-    <section id="home" class="hero-slideshow">
-        <div class="splide">
+    <!-- Hero Slideshow (same as before) -->
+
+    <!-- Gallery Section (same as before) -->
+
+    <!-- Tours Section (same as before) -->
+
+    <!-- Blog Preview Section -->
+    <section id="blog-preview" class="flash-blog-preview">
+        <div class="section-header animate__animated animate__fadeInUp">
+            <h2>Latest From The Wild</h2>
+            <p>Read my adventures and photography tips</p>
+            <a href="blog.html" class="flash-btn animate__animated animate__pulse animate__infinite">View All Blog Posts</a>
+        </div>
+        
+        <!-- Mini Slideshow of Blog Posts -->
+        <div class="blog-slideshow splide">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(10).jpeg?raw=true" alt="Tiger in forest">
-                        <div class="slide-content">
-                            <h2>Wild Encounters</h2>
-                            <p>Experience the raw beauty of India's wildlife</p>
-                            <a href="#tours" class="flash-btn">Book Safari</a>
+                        <div class="blog-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(3).jpeg?raw=true')">
+                            <div class="slide-content">
+                                <span class="category">Conservation</span>
+                                <h3>Tiger Protection Initiatives</h3>
+                                <a href="blog.html#tiger-conservation" class="flash-btn">Read Story</a>
+                            </div>
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Tiger closeup">
-                        <div class="slide-content">
-                            <h2>Tiger Trails</h2>
-                            <p>Photograph majestic Bengal tigers in their natural habitat</p>
-                            <a href="#tours" class="flash-btn">Join Tour</a>
+                        <div class="blog-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(2).jpeg?raw=true')">
+                            <div class="slide-content">
+                                <span class="category">Photography</span>
+                                <h3>Bird Photography Guide</h3>
+                                <a href="blog.html#bird-photography" class="flash-btn">Read Story</a>
+                            </div>
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Kingfisher">
-                        <div class="slide-content">
-                            <h2>Birding Expeditions</h2>
-                            <p>Capture India's vibrant avian life</p>
-                            <a href="#tours" class="flash-btn">Explore Birds</a>
+                        <div class="blog-slide" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(5).jpeg?raw=true')">
+                            <div class="slide-content">
+                                <span class="category">Adventure</span>
+                                <h3>Monsoon Safari Tips</h3>
+                                <a href="blog.html#monsoon-safari" class="flash-btn">Read Story</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -77,174 +91,25 @@
         </div>
     </section>
 
-    <!-- Gallery Section with Flash Grid -->
-    <section id="gallery" class="flash-gallery">
-        <h2 class="section-title">Wildlife Portfolio</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item flash-animate">
-                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Tiger">
-                <div class="gallery-overlay">
-                    <h3>Royal Bengal Tiger</h3>
-                    <p>Kanha National Park</p>
-                </div>
-            </div>
-            <div class="gallery-item flash-animate">
-                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Treepie">
-                <div class="gallery-overlay">
-                    <h3>Rufous Treepie</h3>
-                    <p>Pench Tiger Reserve</p>
-                </div>
-            </div>
-            <div class="gallery-item flash-animate">
-                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(5).jpeg?raw=true" alt="Landscape">
-                <div class="gallery-overlay">
-                    <h3>Forest Landscape</h3>
-                    <p>Tadoba National Park</p>
-                </div>
-            </div>
-            <div class="gallery-item flash-animate">
-                <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(3).jpeg?raw=true" alt="Deer">
-                <div class="gallery-overlay">
-                    <h3>Spotted Deer</h3>
-                    <p>Bandhavgarh Tiger Reserve</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Rest of your sections -->
 
-    <!-- Tours Section with Flip Cards -->
-    <section id="tours" class="flash-tours">
-        <h2 class="section-title">Safari Tours</h2>
-        <div class="tours-container">
-            <div class="tour-card">
-                <div class="tour-card-inner">
-                    <div class="tour-card-front" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(1).jpeg?raw=true')">
-                        <h3>Tiger Safari</h3>
-                    </div>
-                    <div class="tour-card-back">
-                        <h3>Tiger Safari</h3>
-                        <p>3-7 day photography tours in India's top tiger reserves with expert guides</p>
-                        <a href="https://wa.me/919545267651?text=I'm%20interested%20in%20Tiger%20Safari" class="flash-btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tour-card">
-                <div class="tour-card-inner">
-                    <div class="tour-card-front" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(2).jpeg?raw=true')">
-                        <h3>Birding Tour</h3>
-                    </div>
-                    <div class="tour-card-back">
-                        <h3>Birding Tour</h3>
-                        <p>Specialized bird photography tours across India's diverse ecosystems</p>
-                        <a href="https://wa.me/919545267651?text=I'm%20interested%20in%20Birding%20Tour" class="flash-btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tour-card">
-                <div class="tour-card-inner">
-                    <div class="tour-card-front" style="background-image: url('https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.55%20PM%20(5).jpeg?raw=true')">
-                        <h3>Workshop</h3>
-                    </div>
-                    <div class="tour-card-back">
-                        <h3>Photography Workshop</h3>
-                        <p>Learn wildlife photography techniques from a professional</p>
-                        <a href="https://wa.me/919545267651?text=I'm%20interested%20in%20Photography%20Workshop" class="flash-btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section with Parallax -->
-    <section id="about" class="flash-about">
-        <div class="parallax-bg"></div>
-        <div class="about-content">
-            <h2 class="section-title">About Amol Bais</h2>
-            <div class="about-text">
-                <p>With over 10 years of experience in wildlife photography, I specialize in capturing the majestic tigers of Central India. My work has been featured in National Geographic India and several wildlife magazines.</p>
-                <p>I conduct photography tours and workshops to help enthusiasts capture stunning wildlife images while promoting conservation awareness.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="500">0</span>+
-                        <span class="stat-label">Safaris</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="10000">0</span>+
-                        <span class="stat-label">Photos</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="200">0</span>+
-                        <span class="stat-label">Tigers</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="flash-contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>+91 9545267651</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>amolrbais@gmail.com</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Nagpur, Maharashtra, India</p>
-                </div>
-            </div>
-            
-            <form class="contact-form" action="https://formspree.io/f/xqapzezw" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="flash-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="flash-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Logo">
-                <h3>Amol Bais Wildlife Photography</h3>
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#tours">Tours</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/amolsphere" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/amolbais" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://youtube.com/@amol994" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://wa.me/919545267651" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Amol Bais Wildlife Photography. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
-
-    <!-- Splide Slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
-    <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+        // Initialize blog slideshow
+        new Splide('.blog-slideshow', {
+            type: 'loop',
+            perPage: 1,
+            perMove: 1,
+            gap: '20px',
+            autoplay: true,
+            interval: 5000,
+            pauseOnHover: true,
+            breakpoints: {
+                768: {
+                    arrows: false
+                }
+            }
+        }).mount();
+    </script>
 </body>
 </html>
