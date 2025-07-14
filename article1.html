@@ -3,58 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maya - The Legendary Tigress of Tadoba</title>
-    <link rel="stylesheet" href="article1.css">
-    <meta name="description" content="Explore the legendary story of Maya, the iconic tigress of Tadoba.">
-    <meta name="keywords" content="Tadoba, Maya, Tigress, Wildlife, Safari, Tigers, Photography">
+    <title>In the Wild with Amol R. Bais - Wildlife Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Nature Unveiled: A Photographer's Eye - Explore stunning wildlife photography by Amol Bais featuring tigers, birds, and nature from India's top national parks.">
+    <meta name="keywords" content="Wildlife Photography, Nature, Tigers, National Parks, Tadoba, Kanha, Bandhavgarh, Jim Corbett, Pench, Tippeshwar, Panna, Safari, Pilibhit, Amol Bais">
     <meta name="author" content="Amol Bais">
+    <meta property="og:title" content="In the Wild with Amol R. Bais - Wildlife Photography">
+    <meta property="og:description" content="Professional wildlife photographer capturing the beauty of India's wilderness">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="amol-bais-logo.png">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Maya - The Legendary Tigress of Tadoba</h1>
-    </header>
+<header>
+    <div class="header-left">
+        <a href="#home" aria-label="Home - Amol Bais Photography">
+            <img src="amol-bais-logo.png" alt="Amol Bais Photography Logo" class="logo">
+        </a>
+        <h1>Amol Bais Photography</h1>
+    </div>
 
-    <!-- Article Content -->
-    <section class="article-container">
-        <p class="post-date">📅 Posted on: July 15, 2023</p>
-        <img src="images/mountain-trip.jpg" alt="Maya the Tigress - Tadoba">
-        
-        <article class="article-content">
-            <p><strong>Maya</strong>, the legendary tigress of Tadoba, carries a bloodline of strength and grace. She is the daughter of <strong>Leela</strong>, who herself was born to the great tigress <strong>Catrina</strong>. Ruling the <em>Pandharpauni</em> area, Maya established herself as an icon of Tadoba's wilderness.</p>
-            
-            <p>It was a crisp January morning in <strong>2016</strong>, during a safari in Tadoba. Scanning the Tadoba lake, I noticed older pug marks leading towards <em>Pandharpauni junction</em>. As I reached, there she was—<strong>Maya</strong>—sitting in the middle of the road, her eyes focused, her body language hinting at a possible stalk.</p>
-            
-            <p>A herd of deer sensed her presence and, with alarm calls, scattered into the forest. Realizing the hunt was lost, she relaxed. Vehicles and tourists surrounded her, cameras clicking non-stop. I chose to move away, repositioning myself, not wanting the chaos in my frame.</p>
+    <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
 
-            <blockquote class="highlight">"I had a feeling—her cubs were nearby. Time passed, and then, she growled—a deep, commanding call. And from the bushes, a tiny cub emerged, rushing to her mother."</blockquote>
+    <nav id="nav-menu" role="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+	@@ -33,79 +41,292 @@ <h1>Amol Bais Photography</h1>
+    </nav>
+</header>
 
-            <p>What followed was <strong>pure magic</strong>. The cub cuddled into Maya, seeking warmth and affection. She licked it, grooming with care. Then, in an <em>incredible moment</em>, the cub stood on its hind legs and hugged its mother. It was a moment of eternal love—a bond beyond words.</p>
-            
-            <p>I captured a series of photographs, but one stood apart. The cub, looking directly at me, embracing its mother—it was more than a picture. It was a <strong>story</strong>.</p>
-
-            <p>That single shot changed my photographic journey. It found its way onto an <strong>Indian Postal Stamp</strong>, reaching people across the nation. Later, it was featured on <strong>metro trains</strong>, making history.</p>
-            
-            <p><strong>Maya</strong> holds a special place in my heart, not just as a tiger but as a mother, a queen, and a legend of the wild.</p>
-        </article>
-
-        <!-- Call to Action -->
-        <div class="cta-container">
-            <a href="gallery.html" class="cta-button">📸 View More Wildlife Photography</a>
+<main>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="sanskrit-quote">"व्याघ्रः वने निवसति, वनं तेन रक्षितम्।"</h2>
+            <p class="hero-subtitle">The tiger lives in the forest, the forest is protected by it</p>
+            <p class="hero-description">Explore my work and experience the beauty of wildlife through the lens of conservation and artistry.</p>
+            <a href="#trips" class="cta-button">🌍 Explore Wild Trails & Adventures</a>
         </div>
-
-        <!-- Comment Section -->
-        <h2>💬 Comments</h2>
-        <div class="commentbox"></div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script>commentBox('5757270407249920-proj');</script>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 <strong>Amol Bais</strong> | Wildlife Enthusiast & Photographer</p>
-    </footer>
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Wildlife Photography</h2>
+            <p class="section-description">Capturing the essence of India's magnificent wildlife in their natural habitat</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" 
+                         alt="Small Blue Kingfisher in natural habitat" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Small Blue Kingfisher</h3>
+                        <p>A moment of serenity by the water</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" 
+                         alt="Majestic tiger in its natural forest habitat" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Royal Bengal Tiger</h3>
+                        <p>The king of the jungle in all its glory</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" 
+                         alt="Tree Pie bird perched on branch" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Tree Pie</h3>
+                        <p>Elegant beauty of the forest canopy</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" 
+                         alt="Tiger walking through dense forest vegetation" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Tiger in the Wild</h3>
+                        <p>Nature's perfect predator in motion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trips" class="trips-section">
+        <div class="container">
+            <h2>🌿 Wild Trails & Adventures</h2>
+            <p class="section-description">Join thrilling wildlife safaris, birding expeditions, and trekking adventures across India's most spectacular national parks and wilderness areas.</p>
+
+            <div class="trip-container">
+                <div class="trip-category">
+                    <div class="trip-icon">🐅</div>
+                    <h3>Wildlife Safaris</h3>
+                    <p>Experience the thrill of the wild in Tadoba, Ranthambore, Kanha, Bandhavgarh, and other premier national parks. Get up close with tigers, leopards, and exotic wildlife.</p>
+                    <ul class="trip-features">
+                        <li>Professional guide and photographer</li>
+                        <li>Best safari timings for wildlife spotting</li>
+                        <li>Photography tips and techniques</li>
+                        <li>Comfortable accommodation arrangements</li>
+                    </ul>
+                    <button class="trip-btn" onclick="bookTrip('Wildlife Safari')" aria-label="Book Wildlife Safari">Book Now</button>
+                </div>
+
+                <div class="trip-category">
+                    <div class="trip-icon">🦜</div>
+                    <h3>Birding Expeditions</h3>
+                    <p>Discover rare and exotic birds in Bharatpur, Western Ghats, Corbett, and specialized birding destinations across India.</p>
+                    <ul class="trip-features">
+                        <li>Expert birding guide</li>
+                        <li>Early morning and evening sessions</li>
+                        <li>Species identification workshops</li>
+                        <li>Specialized birding equipment provided</li>
+                    </ul>
+                    <button class="trip-btn" onclick="bookTrip('Birding Tour')" aria-label="Book Birding Tour">Book Now</button>
+                </div>
+
+                <div class="trip-category">
+                    <div class="trip-icon">🏔️</div>
+                    <h3>Trekking Adventures</h3>
+                    <p>Conquer breathtaking trails in the Himalayas, Sahyadris, and other mountain ranges while capturing stunning landscapes and wildlife.</p>
+                    <ul class="trip-features">
+                        <li>Experienced trek leader</li>
+                        <li>Safety equipment and first aid</li>
+                        <li>Landscape photography sessions</li>
+                        <li>Cultural experiences en route</li>
+                    </ul>
+                    <button class="trip-btn" onclick="bookTrip('Trekking Expedition')" aria-label="Book Trekking Expedition">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm <strong>Amol Bais</strong>, a passionate wildlife photographer with over a decade of experience capturing the beauty and essence of India's incredible biodiversity.</p>
+
+                    <p>My journey began with a simple love for nature and has evolved into a mission to document and preserve the stories of our wild heritage. Through my lens, I aim to showcase the intricate relationships between wildlife and their habitats, hoping to inspire conservation efforts and deeper appreciation for our natural world.</p>
+
+                    <p>I specialize in wildlife photography, particularly focusing on the big cats of Indian national parks, exotic bird species, and the diverse ecosystems that support them. My work has been featured in various wildlife magazines and conservation publications.</p>
+
+                    <blockquote>
+                        "Photography is not just about capturing an image; it's about telling a story that connects people with nature and ignites a passion for conservation."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email:</strong>
+                            <a href="mailto:amolrbais@gmail.com">amolrbais@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Mobile:</strong>
+                            <a href="tel:+919545267651">+91-9545267651</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <strong>WhatsApp:</strong>
+                            <a href="https://wa.me/919545267651" target="_blank" rel="noopener">Quick Message</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="https://formspree.io/f/xqapzezw" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="Wildlife Safari Booking">Wildlife Safari Booking</option>
+                                <option value="Birding Tour Inquiry">Birding Tour Inquiry</option>
+                                <option value="Trekking Adventure">Trekking Adventure</option>
+                                <option value="Photography Workshop">Photography Workshop</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your interest in wildlife photography or any specific tour requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="social-section">
+        <div class="container">
+            <h2>Follow My Journey</h2>
+            <p>Stay connected for the latest wildlife photography, expedition updates, and conservation stories</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/amolsphere" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                    <span class="social-icon">📷</span>
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/amolbais" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                    <span class="social-icon">📘</span>
+                    Facebook
+                </a>
+                <a href="https://youtube.com/@amol994" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">
+                    <span class="social-icon">🎥</span>
+                    YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Amol Bais Photography. All rights reserved. | Dedicated to wildlife conservation and nature photography.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// Enhanced menu toggle with accessibility
+function toggleMenu() {
+    const nav = document.getElementById("nav-menu");
+    const menuButton = document.querySelector(".menu-button");
+    const isExpanded = nav.classList.contains("show");
+
+    nav.classList.toggle("show");
+    menuButton.setAttribute("aria-expanded", !isExpanded);
+}
+
+// Trip booking function
+function bookTrip(tripType) {
+    const message = encodeURIComponent(`Hi Amol! I'm interested in booking a ${tripType}. Could you please provide more details about the upcoming trips, pricing, and availability?`);
+    window.open(`https://wa.me/919545267651?text=${message}`, '_blank');
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        const nav = document.getElementById("nav-menu");
+        const menuButton = document.querySelector(".menu-button");
+        nav.classList.remove("show");
+        menuButton.setAttribute("aria-expanded", "false");
+    });
+});
+
+// Form submission feedback
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const submitBtn = this.querySelector('.submit-btn');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    // Reset button after form submission (Formspree will handle the redirect)
+    setTimeout(() => {
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+    }, 3000);
+});
+
+// Lazy loading enhancement for images
+if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.classList.add('fade-in');
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+        imageObserver.observe(img);
+    });
+}
+</script>
 
 </body>
 </html>
