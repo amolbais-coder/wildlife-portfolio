@@ -1,54 +1,71 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mainNav = document.querySelector('.main-nav');
-    
-    mobileMenuBtn.addEventListener('click', function() {
-        mainNav.classList.toggle('active');
-        this.innerHTML = mainNav.classList.contains('active') ? 
-            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-    });
-    
-    // Blog dropdown toggle for mobile
-    const blogDropdownToggles = document.querySelectorAll('.blog-dropdown-toggle');
-    
-    blogDropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                const dropdown = this.nextElementSibling;
-                dropdown.classList.toggle('active');
-                
-                // Rotate chevron icon
-                const icon = this.querySelector('i.fa-chevron-down');
-                if (icon) {
-                    icon.style.transform = dropdown.classList.contains('active') ? 
-                        'rotate(180deg)' : 'rotate(0deg)';
-                }
-            }
-        });
-    });
-    
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.main-nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                
-                // Close any open blog dropdowns
-                document.querySelectorAll('.blog-dropdown').forEach(dropdown => {
-                    dropdown.classList.remove('active');
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         });
     });
+
+    // Image lazy loading and gallery enhancements
+    const galleryImages = document.querySelectorAll('.gallery img');
     
-    // Initialize all Splide sliders
-    const sliders = document.querySelectorAll('.splide');
-    sliders.forEach(slider => {
-        new Splide(slider).mount();
+    galleryImages.forEach(img => {
+        // Add loading animation
+        img.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+        
+        // Add click to expand functionality
+        img.addEventListener('click', function() {
+            this.style.transform = this.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)';
+            this.style.zIndex = this.style.transform === 'scale(1.5)' ? '1000' : '1';
+            this.style.transition = 'transform 0.3s ease, z-index 0s';
+        });
     });
-    
-    // Rest of your existing JavaScript
+
+    // Contact form enhancement
+    const contactForm = document.querySelector('#contact form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            // Re-enable after 3 seconds (form will likely redirect)
+            setTimeout(() => {
+                submitButton.textContent = 'Send';
+                submitButton.disabled = false;
+            }, 3000);
+        });
+    }
+
+    // Add fade-in animation for sections
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
 });
