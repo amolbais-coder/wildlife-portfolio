@@ -3,39 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Blog</title>
+    <title>Wildlife Blog | Amol Bais Photography</title>
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Read wildlife photography stories, conservation insights, and field experiences from professional photographer Amol Bais. Explore tales from India's national parks and wildlife sanctuaries.">
+    <meta name="keywords" content="Wildlife Blog, Photography Stories, Conservation, National Parks, Tiger Stories, Birding Experiences, Nature Writing, Wildlife Photography Blog">
+    <meta name="author" content="Amol Bais">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wildlife Blog | Amol Bais Photography">
+    <meta property="og:description" content="Wildlife photography stories and conservation insights from the field">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amolbais-coder.github.io/wildlife-portfolio/blog.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="CA74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png">
 </head>
 <body>
-    <header>
-        <h1>My Travel Blog</h1>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">← Back to Home</a>
+        </nav>
+        <h1>Wildlife Stories from the Field</h1>
+        <p class="blog-subtitle">Capturing moments, sharing experiences, inspiring conservation</p>
     </header>
 
-    <section class="blog-container">
-        <!-- Blog Post 1 -->
-        <article1 class="blog-post">
-            <h2>Maya - The Legendary Tigress of Tadoba</h2>
-            <p class="post-date">Posted on: July 15, 2023</p>
-            <img src="images/mountain-trip.jpg" alt="Mountain Adventure">
-            <p class="post-content">"Maya, the queen of Tadoba, a fierce huntress yet a gentle mother, her legacy etched in the wild, where love and survival intertwine beneath the golden sun...."</p>
-            <a href="article1.html" class="read-more">Read More</a>
-        </article1>
+    <main>
+        <section class="blog-container" role="main">
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+                <header class="post-header">
+                    <h2><a href="article1.html">Maya - The Legendary Tigress of Tadoba</a></h2>
+                    <p class="post-date"><time datetime="2023-07-15">Posted on: July 15, 2023</time></p>
+                </header>
+                
+                <div class="post-image">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Maya the tigress in Tadoba National Park" loading="lazy">
+                </div>
+                
+                <div class="post-content">
+                    <p>"Maya, the queen of Tadoba, a fierce huntress yet a gentle mother, her legacy etched in the wild, where love and survival intertwine beneath the golden sun..."</p>
+                    <p>Discover the remarkable story of one of Tadoba's most iconic tigers and the lessons she taught about survival, motherhood, and the delicate balance of nature.</p>
+                </div>
+                
+                <footer class="post-footer">
+                    <a href="article1.html" class="read-more" aria-label="Read full article about Maya the tigress">Read More →</a>
+                    <div class="post-tags">
+                        <span class="tag">Tigers</span>
+                        <span class="tag">Tadoba</span>
+                        <span class="tag">Conservation</span>
+                    </div>
+                </footer>
+            </article>
+            
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <header class="post-header">
+                    <h2><a href="article2.html">Winter Birding in Gujarat: A Solo Expedition</a></h2>
+                    <p class="post-date"><time datetime="2023-07-10">Posted on: July 10, 2023</time></p>
+                </header>
+                
+                <div class="post-image">
+                    <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Bird photography in Gujarat wetlands" loading="lazy">
+                </div>
+                
+                <div class="post-content">
+                    <p>Exploring Gujarat's winter birding paradise, from the coastal wonders of Jamnagar to the wetlands of Kutch. A journey through changing migration patterns, patient photography, and the beauty of resident and migratory birds.</p>
+                    <p>Join me on this solo expedition where every sunrise brought new species and every photograph told a story of migration, adaptation, and survival.</p>
+                </div>
+                
+                <footer class="post-footer">
+                    <a href="article2.html" class="read-more" aria-label="Read full article about Gujarat birding expedition">Read More →</a>
+                    <div class="post-tags">
+                        <span class="tag">Birding</span>
+                        <span class="tag">Gujarat</span>
+                        <span class="tag">Migration</span>
+                        <span class="tag">Solo Travel</span>
+                    </div>
+                </footer>
+            </article>
+        </section>
         
-         <!-- Blog Post 2 -->
-        <article2 class="blog-post">
-            <h2>Winter Birding in Gujarat: A Solo Expedition</h2>
-            <p class="post-date">Posted on: July 10, 2023</p>
-            <img src="images/beach-day.jpg" alt="Beach Vacation">
-            <p class="post-content">Exploring Gujarat’s winter birding paradise, from the coastal wonders of Jamnagar to the wetlands of Kutch. A journey through changing migration patterns, patient photography, and the beauty of resident and migratory birds, all captured through the lens of a Nikon mirrorless with a 600mm telephoto</p>
-            <a href="article2.html" class="read-more">Read More</a>
-        </article2>
-       
-   </section>
-      
-    <footer>
-        <p>© 2025 Amol Bais | Wildlife Enthusiast</p>
-    </footer>
-
+        <aside class="blog-sidebar" role="complementary">
+            <section class="widget">
+                <h3>About This Blog</h3>
+                <p>Follow my wildlife photography adventures across India's diverse landscapes. From the forests of Central India to the wetlands of Gujarat, each story captures the beauty and challenges of wildlife photography.</p>
+            </section>
+            
+            <section class="widget">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" aria-label="View tiger photography posts">Tiger Photography</a></li>
+                    <li><a href="#" aria-label="View bird photography posts">Bird Photography</a></li>
+                    <li><a href="#" aria-label="View conservation posts">Conservation Stories</a></li>
+                    <li><a href="#" aria-label="View travel tips posts">Travel Tips</a></li>
+                </ul>
+            </section>
+            
+            <section class="widget">
+                <h3>Join My Adventures</h3>
+                <p>Interested in joining a wildlife photography tour?</p>
+                <a href="index.html#trips" class="cta-button-small">Explore Tours</a>
+            </section>
+        </aside>
+    </main>
     
+    <footer role="contentinfo">
+        <p>&copy; 2025 Amol Bais Photography | <a href="index.html">Home</a> | <a href="index.html#contact">Contact</a></p>
+    </footer>
 </body>
 </html>

@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In the Wild with Amol R. Bais</title>
+    <title>Amol Bais Photography | Professional Wildlife Photography & Nature Tours</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Nature Unveiled: A Photographer’s Eye">
-    <meta name="keywords" content="Wildlife Photography, Nature, Tigers, National Parks, Tadoba, Kanha, Bandhavgarh, Jim Corbett, Pench, Tippeshwar, Panna, Safari, Pilibhit">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional wildlife photographer Amol Bais captures the beauty of India's wildlife. Book wildlife safaris, birding tours, and trekking expeditions across India's top national parks.">
+    <meta name="keywords" content="Wildlife Photography, Nature Photography, Tigers, National Parks, Tadoba, Kanha, Bandhavgarh, Jim Corbett, Pench, Safari Tours, Wildlife Tours, Birding Expeditions, Nature Tours, Professional Photographer">
     <meta name="author" content="Amol Bais">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Amol Bais Photography | Professional Wildlife Photography">
+    <meta property="og:description" content="Experience India's wildlife through the lens of professional photographer Amol Bais. Book wildlife safaris and nature tours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amolbais-coder.github.io/wildlife-portfolio/">
+    <meta property="og:image" content="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/CA74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png?raw=true">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amol Bais Photography | Professional Wildlife Photography">
+    <meta name="twitter:description" content="Experience India's wildlife through professional photography and guided tours.">
+    <meta name="twitter:image" content="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/CA74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png?raw=true">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="CA74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Amol Bais",
+        "jobTitle": "Wildlife Photographer",
+        "description": "Professional wildlife photographer specializing in India's diverse wildlife and natural landscapes",
+        "url": "https://amolbais-coder.github.io/wildlife-portfolio/",
+        "email": "amolrbais@gmail.com",
+        "telephone": "+91-9545267651",
+        "sameAs": [
+            "https://www.instagram.com/amolsphere",
+            "https://www.facebook.com/amolbais",
+            "https://youtube.com/@amol994"
+        ]
+    }
+    </script>
 </head>
 <body>
 
-<header>
+<header role="banner">
     <div class="header-left">
-        <a href="#home">
-            <img src="74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Photography Logo" class="logo">
+        <a href="#home" aria-label="Return to homepage">
+            <img src="CA74E5AD-8903-4E3E-8D64-CD365AD1B8C9.png" alt="Amol Bais Photography Logo" class="logo">
         </a>
         <h1>Amol Bais Photography</h1>
     </div>
 
-    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
 
-    <nav id="nav-menu">
+    <nav id="nav-menu" role="navigation" aria-label="Main navigation">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -33,80 +71,124 @@
     </nav>
 </header>
 
-<section id="home">
-    <h2>"व्याघ्रः वने निवसति, वनं तेन रक्षितम्।"</h2>
-    <p>Explore my work and experience the beauty of wildlife.</p>
-    <a href="#trips" class="cta-button">🌍 Explore Wild Trails & Adventures</a>
-</section>
+<main>
+    <section id="home" role="banner">
+        <h2>"व्याघ्रः वने निवसति, वनं तेन रक्षितम्।"</h2>
+        <p>Explore my work and experience the beauty of wildlife.</p>
+        <a href="#trips" class="cta-button" role="button">🌍 Explore Wild Trails & Adventures</a>
+    </section>
 
-<section id="gallery">
-    <h2>Wildlife Photography</h2>
-    <div class="gallery">
-        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Small Blue Kingfisher">
-        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Tiger in the wild">
-        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Tree Pie bird">
-        <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Majestic tiger in the forest">
-    </div>
-</section>
-
-<section id="trips">
-    <h2>🌿 Wild Trails & Adventures</h2>
-    <p>Join thrilling wildlife safaris, birding expeditions, and trekking adventures across India's top national parks.</p>
-
-    <div class="trip-container">
-        <div class="trip-category">
-            <h3>🐅 Wildlife Safaris</h3>
-            <p>Experience the thrill of the wild in Tadoba, Ranthambore, and other top national parks.</p>
-            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Wildlife%20Safari'">Book Now</button>
+    <section id="gallery" role="region" aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">Wildlife Photography</h2>
+        <div class="gallery">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM.jpeg?raw=true" alt="Small Blue Kingfisher perched on a branch" loading="lazy">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2012.29.54%20PM%20(4).jpeg?raw=true" alt="Majestic tiger walking through natural habitat" loading="lazy">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.05%20AM%20(1).jpeg?raw=true" alt="Tree Pie bird displaying vibrant plumage" loading="lazy">
+            <img src="https://github.com/amolbais-coder/wildlife-portfolio/blob/main/WhatsApp%20Image%202024-12-12%20at%2011.48.06%20AM%20(2).jpeg?raw=true" alt="Tiger resting in the forest during golden hour" loading="lazy">
         </div>
+    </section>
+
+    <section id="trips" role="region" aria-labelledby="trips-heading">
+        <h2 id="trips-heading">🌿 Wild Trails & Adventures</h2>
+        <p>Join thrilling wildlife safaris, birding expeditions, and trekking adventures across India's top national parks.</p>
+
+        <div class="trip-container">
+            <article class="trip-category">
+                <h3>🐅 Wildlife Safaris</h3>
+                <p>Experience the thrill of the wild in Tadoba, Ranthambore, and other top national parks.</p>
+                <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Wildlife%20Safari'" aria-label="Book Wildlife Safari via WhatsApp">Book Now</button>
+            </article>
+            
+            <article class="trip-category">
+                <h3>🦜 Birding Expeditions</h3>
+                <p>Discover rare and exotic birds in Bharatpur, Western Ghats, and more.</p>
+                <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Birding%20Tour'" aria-label="Book Birding Tour via WhatsApp">Book Now</button>
+            </article>
+
+            <article class="trip-category">
+                <h3>🏔️ Trekking Adventures</h3>
+                <p>Conquer breathtaking trails in the Himalayas, Sahyadris, and beyond.</p>
+                <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Trekking%20Expedition'" aria-label="Book Trekking Expedition via WhatsApp">Book Now</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" role="region" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>Hi, I'm <strong>Amol Bais</strong>, a passionate wildlife photographer based in India. My goal is to capture the beauty of nature and raise awareness about wildlife conservation through my lens. With years of experience exploring India's diverse ecosystems, I specialize in photographing tigers, birds, and the incredible biodiversity found in our national parks.</p>
+    </section>
+
+    <section id="contact" role="region" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
+        <address>
+            <p>Email: <a href="mailto:amolrbais@gmail.com">amolrbais@gmail.com</a></p>
+            <p>Mobile: <a href="tel:+919545267651">+91-9545267651</a></p>
+        </address>
         
-        <div class="trip-category">
-            <h3>🦜 Birding Expeditions</h3>
-            <p>Discover rare and exotic birds in Bharatpur, Western Ghats, and more.</p>
-            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Birding%20Tour'">Book Now</button>
-        </div>
+        <form action="https://formspree.io/f/xqapzezw" method="POST" role="form" aria-labelledby="contact-form-heading">
+            <h3 id="contact-form-heading" class="sr-only">Contact Form</h3>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-help">
+            <div id="email-help" class="sr-only">Enter your email address</div>
 
-        <div class="trip-category">
-            <h3>🏔️ Trekking Adventures</h3>
-            <p>Conquer breathtaking trails in the Himalayas, Sahyadris, and beyond.</p>
-            <button onclick="window.location.href='https://wa.me/919545267651?text=I%20want%20to%20join%20a%20Trekking%20Expedition'">Book Now</button>
-        </div>
-    </div>
-</section>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required aria-describedby="message-help" rows="5"></textarea>
+            <div id="message-help" class="sr-only">Enter your message or inquiry</div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm <strong>Amol Bais</strong>, a passionate wildlife photographer. My goal is to capture the beauty of nature and raise awareness about wildlife conservation.</p>
-</section>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:amolrbais@gmail.com">amolrbais@gmail.com</a></p>
-    <p>Mobile: <a href="tel:+919545267651">+91-9545267651</a></p>
-    
-    <form action="https://formspree.io/f/xqapzezw" method="POST">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send</button>
-    </form>
-</section>
-
-<section id="social">
-    <h2>Follow Me</h2>
-    <a href="https://www.instagram.com/amolsphere" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/amolbais" target="_blank">Facebook</a> |
-    <a href="https://youtube.com/@amol994" target="_blank">YouTube</a>
-</section>
+<footer role="contentinfo">
+    <section id="social">
+        <h2>Follow Me</h2>
+        <nav aria-label="Social media links">
+            <a href="https://www.instagram.com/amolsphere" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram (opens in new tab)">Instagram</a> |
+            <a href="https://www.facebook.com/amolbais" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook (opens in new tab)">Facebook</a> |
+            <a href="https://youtube.com/@amol994" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube (opens in new tab)">YouTube</a>
+        </nav>
+        <p>&copy; 2025 Amol Bais Photography. All rights reserved.</p>
+    </section>
+</footer>
 
 <script>
 function toggleMenu() {
-    var nav = document.getElementById("nav-menu");
+    const nav = document.getElementById("nav-menu");
+    const button = document.querySelector(".menu-button");
+    const isExpanded = nav.classList.contains("show");
+    
     nav.classList.toggle("show");
+    button.setAttribute("aria-expanded", !isExpanded);
 }
+
+// Improve accessibility for keyboard navigation
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const nav = document.getElementById("nav-menu");
+        const button = document.querySelector(".menu-button");
+        
+        if (!nav.contains(e.target) && !button.contains(e.target)) {
+            nav.classList.remove("show");
+            button.setAttribute("aria-expanded", "false");
+        }
+    });
+});
 </script>
 
 </body>
